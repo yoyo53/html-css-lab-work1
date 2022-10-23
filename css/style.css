@@ -1,0 +1,298 @@
+/*  Q0: All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+    margin: 0;
+}
+
+/*  Q1: set the new HTML5 element as block level elements */
+header, main, footer, nav, video {
+    display: block;
+}
+
+/*  Q2: style the body element
+      a) change the color of the text
+      b) add a background image
+      c) change the font-family
+      d) set a 0 margin on all sides, but no need to put it as it's already applied on all elements */
+body {
+    color: #000000;
+    background-image: url("../assets/images/darkwood2.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  Q3: style the div element with class "container"
+      a) set the width of the div
+      b) add a 5px margin on top and bottom
+      c) align the div in the center of the window
+      d) set a background color for the div */
+div.container {
+    width: 950px;
+    margin : 5px auto;
+    background-color: #dddddd;
+}
+
+
+/*  Q4: style all the elements with class "content"
+      a) set the line height
+      b) add a padding on all sides */
+.content {
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+
+/*  Q5: style the header, nav and footer
+      a) change the background color
+      b) change the text color
+    As nav is contained in the header, no need to apply the style to it, it will inherit it from the header element */
+header, footer {
+    background-color: #777777;
+    color: #ffffff;
+}
+
+
+/*  Q6: style the unordered list inside the nav element
+      a) set a 0 margin on all sides, again no need to put it as it's already applied on all elements
+      b) add a padding on all sides */
+nav  ul {
+    padding: 10px;
+}
+
+
+/*  Q7: style the list items of the navigation bar
+      a) to be displayed horizontally
+      b) add a margin on the right */
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+
+/*  Q8: style the links of the list items of the navigation bar
+      a) change the normal link color */
+nav ul li a:link {
+    color: #3700ff;
+}
+
+
+/*    b) change the visited link color */
+nav ul li a:visited {
+    color: #8019a0;
+}
+
+
+/*    c) change the hover link color */
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+
+/*    d) change the active link color */
+nav ul li a:active {
+    color: #ffffff;
+}
+
+
+/*  Q9: style all the links
+      a) change the text color of the links
+      b) set no underline for the links */
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+
+/*  Q10: style the 3 headings h1, h2 and h3
+      a) add a margin on all the sides
+      b) set the text in uppercase */
+h1, h2, h3 {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+
+/*    c) change the text color for h1 titles */
+h1 {
+    color: #975101;
+}
+
+
+/*    c) change the text color for h2 titles */
+h2 {
+    color: #ca6c00;
+}
+
+
+/*    c) change the text color for h3 titles */
+h3 {
+    color: #ff8800;
+}
+
+
+/*  Q11: style the class "img-centre"
+      a) centre the image horizontally
+      b) set a margin on top and bottom
+      c) set a padding on all sides */
+.img-centre {
+    display: block;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+
+/*  Q12: style the audio and video elements
+      a) centre the elements horizontally
+      b) set a margin on top and bottom */
+audio, video {
+    display: block;
+    margin: 10px auto;
+}
+
+
+/*  Q13: style the table elements
+      a) set the width of the table
+      b) center the table horizontally and add a margin on top and bottom
+      b) set the border as collapsed */
+table {
+    width: 800px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+
+/*  Q14: style the cells of all tables (th and td)
+      a) add a border
+      b) add a padding on top/bottom and on left/right
+      b) change the background color */
+th, td {
+    border: 1px solid #000000;
+    padding: 2px 5px;
+    background-color: #777777;
+}
+
+/*  Q15: style the th of any table and the td inside the tfoot
+      a) set the text in uppercase
+      b) change the background color
+      b) change the text color */
+th, tfoot td {
+    text-transform: uppercase;
+    background-color: #555555;
+    color: #ff8800;
+}
+    
+/*  Q16: style any dt element to make it bold*/
+dt {
+    font-weight: bold;
+}
+
+
+/*  Q17: style the footer
+      a) set the font size at 80% of the default font size
+      b) align the text to the center
+      b) add padding to top/bottom and 0 padding to left/right */
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 1px 0;
+}
+
+
+/*  Q18: style the iframe element
+      a) set a margin on top and bottom
+      b) centre the elements horizontally */
+iframe {
+    display: block;
+    margin: 10px auto;
+}
+
+
+/*  Q19: style the fieldset elements
+      a) set the width of the fieldset
+      b) add a margin for top/bottom and center horizontally
+      c) add a border
+      d) add a background color */
+fieldset {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    background-color: #777777;
+}
+
+
+/*  Q20: style the legend elements
+      a) set the text in italic
+      b) change font and background color
+      c) set a 0 margin for top/bottom and add a margin for left/right
+      d) set a 0 padding for top/bottom and add a padding for left/right
+      e) add a rounded border
+    0 margin is already applied on all elements, no need to put it again */
+legend {
+    font-style: italic;
+    color: #ff8800;
+    background-color: #555555;
+    margin: 0 10px;
+    padding: 0 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+
+/*  Q21: style the input of type submit
+      a) add a border
+      b) add a padding on all sides
+      c) change the background color
+      d) change the text color */
+input[type="submit"] {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/*  Q22: style the input of type submit when we hover the mouse over it
+      a) change the text and background color
+      b) make the mouse look like a hand */
+input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #363636;
+    cursor: pointer;
+}
+
+
+/* additionnal styles */
+body {
+    min-height: calc(100vh - 10px);
+}
+
+div.container {
+    min-height: calc(100vh - 10px);
+    outline: 5px solid #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: auto;
+}
+
+td {
+    text-align: center;
+}
+
+fieldset {
+    line-height: 2em;
+}
+
+.mandatory_indicator {
+    display: inline-block;
+    color: #ff0000;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+}
